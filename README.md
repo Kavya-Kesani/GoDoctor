@@ -288,6 +288,17 @@ Collections include:
 - Support Tickets
 
 ---
+# CODE EXPLANATION VIDEO
+
+https://drive.google.com/file/d/1kkL06tgKvIupk0tOQXkRaX_uMUVcMu3y/view?usp=sharing
+
+---
+
+# PROJECT OVERVIEW VIDEO
+
+https://drive.google.com/file/d/1LtMGW64gkcqIi3r0RWr986Dxvj9TlxhV/view?usp=drivesdk
+
+---
 
 # Future Enhancements
 
