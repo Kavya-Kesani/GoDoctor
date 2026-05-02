@@ -1,69 +1,309 @@
-# GoDoctor - Complete Healthcare Management System
+# GoDoctor - Healthcare & Appointment Management System
 
 ## Overview
-GoDoctor is a comprehensive full-stack healthcare system built with React.js frontend, Node.js/Express.js backend, and MongoDB database. It provides separate applications for patients, doctors, support staff, and administrators.
 
-## Tech Stack
-- **Frontend**: React.js with modern UI/UX
-- **Backend**: Node.js + Express.js
-- **Database**: MongoDB
-- **Authentication**: JWT-based
-- **Architecture**: RESTful API with modular structure
+GoDoctor is a full-stack MERN healthcare management system designed to simplify doctor appointment booking, prescription management, patient monitoring, and support management through a centralized digital platform.
 
-## Applications/Modules
-1. **Patient Application** - User registration, appointment booking, prescription viewing
-2. **Doctor Application** - Profile management, appointment handling, prescription writing
-3. **Support Application** - Ticket-based support, chat system, issue resolution
-4. **Admin Dashboard** - User management, doctor verification, system monitoring
+The system provides separate modules for:
+- Patients
+- Doctors
+- Support Staff
+- Administrators
 
-## Features
-- JWT Authentication
-- Role-based access control
-- Appointment management
-- Prescription system
-- Payment integration (optional)
-- Notifications
-- Support ticketing system
+GoDoctor helps users efficiently manage healthcare services online with secure authentication, appointment scheduling, digital prescriptions, notifications, and support ticket management.
 
-## Installation & Setup
+---
 
-### Prerequisites
-- Node.js (v16+)
+# Tech Stack
+
+## Frontend
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Axios
+- React Router DOM
+- Tailwind CSS
+
+## Backend
+- Node.js
+- Express.js
+
+## Database
 - MongoDB
-- npm or yarn
+- Mongoose
 
-### Backend Setup
+## Authentication & Security
+- JWT Authentication
+- bcrypt Password Hashing
+
+---
+
+# Project Structure
+
+```bash
+GODOCTOR
+│
+├── backend
+│   ├── config
+│   ├── controllers
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── scripts
+│   ├── server.js
+│   └── package.json
+│
+├── frontend
+│   ├── public
+│   ├── src
+│   ├── package.json
+│   └── tailwind.config.js
+│
+├── .gitignore
+└── README.md
+```
+
+---
+
+# Features
+
+## Patient Module
+- User Registration & Login
+- Book Appointments
+- View Prescriptions
+- Medical History
+- Profile Management
+- Support Ticket System
+
+## Doctor Module
+- Manage Appointments
+- Patient Records
+- Prescription Management
+- Availability Scheduling
+- Profile Management
+
+## Support Module
+- Ticket Management
+- User Issue Resolution
+- Support Dashboard
+
+## Admin Module
+- User Management
+- Doctor Management
+- Appointment Monitoring
+- System Dashboard
+
+---
+
+# Authentication & Security
+
+- JWT-based Authentication
+- Protected Routes
+- Password Hashing using bcrypt
+- Role-Based Access Control
+- Secure MongoDB Connection
+
+---
+
+# Installation & Setup
+
+## Prerequisites
+
+Install the following software before running the project:
+
+- Node.js (v16 or above)
+- MongoDB
+- npm
+
+---
+
+# Clone Repository
+
+```bash
+git clone https://github.com/yourusername/GoDoctor.git
+```
+
+Move into project folder:
+
+```bash
+cd GoDoctor
+```
+
+---
+
+# Backend Setup
+
+Move into backend folder:
+
+```bash
+cd backend
+```
+
+Install backend dependencies:
+
+```bash
+npm install
+```
+
+---
+
+# Create .env File
+
+Inside backend folder create a file named:
+
+```bash
+.env
+```
+
+Add the following environment variables:
+
+```env
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/godoctor
+JWT_SECRET=godoctor123
+```
+
+Example using MongoDB Atlas:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_atlas_connection_string
+JWT_SECRET=your_secret_key
+```
+
+---
+
+# Start Backend Server
+
+```bash
+npm run dev
+```
+
+Backend server will run on:
+
+```bash
+http://localhost:5000
+```
+
+---
+
+# Frontend Setup
+
+Open new terminal and move into frontend folder:
+
+```bash
+cd frontend
+```
+
+Install frontend dependencies:
+
+```bash
+npm install
+```
+
+---
+
+# Start Frontend Server
+
+```bash
+npm start
+```
+
+Frontend application will run on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# Installing Node Modules
+
+The `node_modules` folders are not included in GitHub because they are ignored using `.gitignore`.
+
+After cloning the repository, install dependencies manually using:
+
+## Backend
+
 ```bash
 cd backend
 npm install
-# Create .env file with MongoDB URI and JWT secret
-npm start
 ```
 
-### Frontend Setup
+## Frontend
+
 ```bash
 cd frontend
 npm install
-npm start
 ```
 
-### Database
-- Install MongoDB locally or use MongoDB Atlas
-- Update connection string in backend/config/database.js
+This command will automatically install all required packages from `package.json`.
 
-## API Documentation
-See backend/routes/ for all API endpoints.
+---
 
-## Deployment
-- Backend: Deploy to services like Heroku, AWS EC2, or Azure App Service
-- Frontend: Deploy to Vercel, Netlify, or AWS S3
-- Database: MongoDB Atlas for cloud hosting
+# API Structure
 
-## Architecture
-- Modular backend with separate routes/controllers
-- Component-based React frontend
-- JWT for secure authentication
-- Role-based permissions
+The backend follows RESTful API architecture.
 
-## Contributing
-Follow standard coding practices and maintain modular structure.
+## Main API Modules
+
+- Authentication APIs
+- Doctor APIs
+- Patient APIs
+- Appointment APIs
+- Prescription APIs
+- Notification APIs
+- Support Ticket APIs
+- Admin APIs
+
+---
+
+# MVC Architecture
+
+GoDoctor follows the MVC (Model View Controller) architecture.
+
+## Model
+Handles MongoDB schemas and database operations.
+
+## View
+Frontend React.js components and UI.
+
+## Controller
+Handles business logic and API processing.
+
+---
+
+# Database
+
+MongoDB is used as the primary database.
+
+Collections include:
+- Users
+- Doctors
+- Patients
+- Appointments
+- Prescriptions
+- Notifications
+- Support Tickets
+
+---
+
+# Future Enhancements
+
+- Video Consultation
+- Online Payment Gateway
+- AI Health Recommendations
+- Real-time Chat
+- Email & SMS Notifications
+- Mobile Application
+
+---
+
+# Author
+
+K.Kavya
+
+# License
+
+This project is developed for educational and academic purposes.
